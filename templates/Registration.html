@@ -1,0 +1,79 @@
+
+{% extends 'dummy.html' %}
+{% load static %}
+{% block title %}
+<title>Home</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+<div class="one">
+    <h1>Student Name:Girish</h1>
+    <h1>Student ID: 74DA1</h1>
+    <hr>
+
+</div>
+<h1>Registration Form</h1>
+<form>
+    <table class="two">
+        <tr>
+            <td><label>Name</label></td>
+            <td><input type="text">
+
+
+              <td><lable>CNIC</lable></td>
+            <td><input type="text"></td>
+        </td>
+        </tr>
+        <tr>
+            <td><label>Course</label></td>
+            <td><input type="text">  <td><lable>Session</lable></td>
+            <td><input type="text"></td>
+        </td>
+    </tr>
+    <tr>
+            <td><label>Email</label></td>
+            <td><input type="text">  <td><lable>Password</lable></td>
+            <td><input type="text"></td>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Address</label></td>
+        <td><textarea row="4" cols="34"></textarea></td>
+    </tr>
+</table>
+<table class="three">
+    <tr>
+        <td><label>Gender:</label>
+        <td><input type="radio" name="Male">Male</input></td>
+            <td><input type="radio" name="male">Female</input></td>
+        </td>
+    </tr>
+    <tr>
+        <td><lable>City:</lable></td>
+        <td>
+            <select>
+            <option value="">------select------</option>
+            <option value="beng">Bengaluru</option>
+            <option value="Vij">Vijayawada</option>
+            
+            <option value="Che">Chennai</option>
+            
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td><input type="radio" name="newstudent">New Student</input> <td><input type="radio" name="continuing student">Continuing Student</td>
+
+</tr>
+<tr>
+ <td colspan="5",align="center">
+    <input type="submit">
+    <input type="reset">
+ </td>
+</tr>
+</table>		
+</form>
+</center>
+{% endblock %}
